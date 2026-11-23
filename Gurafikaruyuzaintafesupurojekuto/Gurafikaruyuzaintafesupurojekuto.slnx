@@ -4,6 +4,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="Authentification/Authentification.csproj" Id="eea286d5-da89-4593-a005-72dfcf8b951a" />
   <Project Path="Gurafikaruyuzaintafesupurojekuto/Gurafikaruyuzaintafesupurojekuto.csproj">
     <Platform Solution="*|ARM64" Project="ARM64" />
     <Platform Solution="*|x64" Project="x64" />
