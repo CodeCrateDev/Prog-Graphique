@@ -3,14 +3,82 @@
     x:Class="Gurafikaruyuzaintafesupurojekuto.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:Gurafikaruyuzaintafesupurojekuto"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Gurafikaruyuzaintafesupurojekuto"
-    mc:Ignorable="d">
-    <Window.SystemBackdrop>
-        <MicaBackdrop />
-    </Window.SystemBackdrop>
+    Title="Gestion de Club">
 
-    <Grid />
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Menu latéral  -->
+        <Border Grid.Column="0" Background="#2B2D42">
+            <StackPanel Margin="10">
+
+                <TextBlock
+                    Margin="10,20,10,30"
+                    HorizontalAlignment="Center"
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Text="Gestion Club" />
+
+                <TextBlock
+                    Margin="10,10,0,5"
+                    Foreground="#8D99AE"
+                    Text="Administrateurs" />
+                <Button
+                    Click="BtnPageAjoutAdmin_Click"
+                    Content="Ajouter un administrateur"
+                    Style="{StaticResource NavButton}" />
+
+                <TextBlock
+                    Margin="10,15,0,5"
+                    Foreground="#8D99AE"
+                    Text="Adhérents" />
+                <Button
+                    Click="BtnPageAdherents_Click"
+                    Content="Liste des adhérents"
+                    Style="{StaticResource NavButton}" />
+                <Button
+                    Click="BtnPageAjoutAdherent_Click"
+                    Content="Ajouter un adhérent"
+                    Style="{StaticResource NavButton}" />
+
+                <TextBlock
+                    Margin="10,15,0,5"
+                    Foreground="#8D99AE"
+                    Text="Activités" />
+                <Button
+                    Click="BtnPageActivites_Click"
+                    Content="Liste des activités"
+                    Style="{StaticResource NavButton}" />
+                <Button
+                    Click="BtnPageAjoutActivite_Click"
+                    Content="Ajouter une activité"
+                    Style="{StaticResource NavButton}" />
+
+                <TextBlock
+                    Margin="10,15,0,5"
+                    Foreground="#8D99AE"
+                    Text="Séances" />
+                <Button
+                    Click="BtnPageAjoutSeance_Click"
+                    Content="Ajouter une séance"
+                    Style="{StaticResource NavButton}" />
+
+                <TextBlock
+                    Margin="10,15,0,5"
+                    Foreground="#8D99AE"
+                    Text="Statistiques" />
+                <Button
+                    Click="BtnPageStatistiques_Click"
+                    Content="Statistiques"
+                    Style="{StaticResource NavButton}" />
+            </StackPanel>
+        </Border>
+
+        <!--  Zone de contenu  -->
+        <Frame x:Name="MainFrame" Grid.Column="1" />
+    </Grid>
 </Window>

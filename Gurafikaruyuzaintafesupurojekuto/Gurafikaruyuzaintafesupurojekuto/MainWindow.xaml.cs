@@ -1,22 +1,56 @@
+using Gurafikaruyuzaintafesupurojekuto.Pages;
 using Microsoft.UI.Xaml;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using System.Windows;
 
 namespace Gurafikaruyuzaintafesupurojekuto
 {
-    /// <summary>
-    /// The application window. This hosts a Frame that displays pages. Add your
-    /// UI and logic to MainPage.xaml / MainPage.xaml.cs instead of here so you
-    /// can use Page features such as navigation events and the Loaded lifecycle.
-    /// </summary>
-    public sealed partial class MainWindow : Window
+    public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new PageAdherents()); // Page affichée au démarrage
+        }
 
+        // ----- Administrateurs -----
+        private void BtnPageAjoutAdmin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
             
+
+        // ----- Adhérents -----
+        private void BtnPageAdherents_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnPageAjoutAdherent_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // ----- Activités -----
+        private void BtnPageActivites_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnPageAjoutActivite_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // ----- Séances -----
+        private void BtnPageAjoutSeance_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // ----- Statistiques -----
+        private void BtnPageStatistiques_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

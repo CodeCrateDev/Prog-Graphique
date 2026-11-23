@@ -15,6 +15,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Pages\PageActivités.xaml" />
+    <None Remove="Pages\PageAdhérent.xaml" />
+    <None Remove="Pages\PageAjoutActivité.xaml" />
+    <None Remove="Pages\PageAjoutAdhérent.xaml" />
+    <None Remove="Pages\PageAjoutAdmin.xaml" />
+    <None Remove="Pages\PageAjoutSéance.xaml" />
+    <None Remove="Pages\PageDétailAdhérent.xaml" />
+    <None Remove="Pages\PageDétailsActivité.xaml" />
+    <None Remove="Pages\PageDétailSéance.xaml" />
+    <None Remove="Pages\PageModifActivité.xaml" />
+    <None Remove="Pages\PageModifAdhérent.xaml" />
+    <None Remove="Pages\PageModifSéance.xaml" />
+    <None Remove="Pages\PageStats.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -54,6 +69,71 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="*" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools.WinApp" Version="*" />
     <PackageReference Include="MySql.Data" Version="26.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageStats.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageDétailSéance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageModifSéance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageAjoutSéance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageDétailsActivité.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageModifActivité.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageAjoutActivité.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageActivités.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageDétailAdhérent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageModifAdhérent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageAjoutAdhérent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageAdhérent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\PageAjoutAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--
