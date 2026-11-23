@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Gurafikaruyuzaintafesupurojekuto (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Gurafikaruyuzaintafesupurojekuto (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
